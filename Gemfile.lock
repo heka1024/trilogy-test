@@ -96,6 +96,9 @@ GEM
   specs:
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    benchmark-ips (2.10.0)
+    benchmark-memory (0.2.0)
+      memory_profiler (~> 1)
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
@@ -118,6 +121,8 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     erubi (1.11.0)
+    faker (2.22.0)
+      i18n (>= 1.8.11, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -138,6 +143,7 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
     matrix (0.4.2)
+    memory_profiler (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.3)
@@ -224,9 +230,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark-ips
+  benchmark-memory
   bootsnap
   capybara
   debug
+  faker
   importmap-rails
   jbuilder
   mysql2 (~> 0.5.4)

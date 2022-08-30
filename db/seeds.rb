@@ -1,7 +1,1 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+100.times do |i|  puts "Seeding #{i * 1000} to #{(i + 1) * 1000}"  seeds = 1_000.times.map do |_|    {      title: Faker::Lorem.sentence,      content: Faker::Lorem.paragraph,      created_at: Faker::Time.between(from: 1.year.ago, to: Time.now),      updated_at: Time.now    }  end  Post.insert_all(seeds)end
