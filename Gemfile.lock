@@ -94,6 +94,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    activerecord-trilogy-adapter (2.0.0)
+      activerecord (>= 7.1.0.alpha)
+      trilogy (>= 2.1.1)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     benchmark-ips (2.10.0)
@@ -148,7 +151,6 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.5.6)
-    mysql2 (0.5.4)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -203,6 +205,7 @@ GEM
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
+    trilogy (2.1.1)
     turbo-rails (1.1.1)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -230,6 +233,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-trilogy-adapter
   benchmark-ips
   benchmark-memory
   bootsnap
@@ -238,13 +242,13 @@ DEPENDENCIES
   faker
   importmap-rails
   jbuilder
-  mysql2 (~> 0.5.4)
   puma (~> 5.0)
   rails!
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  trilogy
   turbo-rails
   tzinfo-data
   web-console
