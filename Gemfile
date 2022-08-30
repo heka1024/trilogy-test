@@ -9,7 +9,8 @@ gem "rails", github: "rails/rails", branch: "main"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-gem "mysql2", "~> 0.5.4"
+gem 'trilogy'
+gem "activerecord-trilogy-adapter"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
